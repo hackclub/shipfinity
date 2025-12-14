@@ -18,4 +18,4 @@ Gridfinity is a modular, open-source storage system based on a 42x42mm grid, des
 
 - Already familiar with CAD and Gridfinity? Start designing immediately in your preferred software!
 - New to CAD? Click [here](https://shipfinity.hackclub.dev/guide) for a beginner's guide.
-- Join the conversation in the Slack channel [#shipfinity](https://hackclub.slack.com/archives/C08EEU7T4GM).
+- Join the conversation in the Slack channel [#shipfinity](https://hackclub.enterprise.slack.com/archives/C08EEU7T4GM).
