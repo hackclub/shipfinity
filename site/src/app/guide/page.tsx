@@ -2,87 +2,126 @@ import Link from "next/link";
 
 export default function GuidesPage() {
   return (
-    <div className="p-10 bg-gray-800 text-gray-100 min-h-screen">
-      <div className="flex flex-col items-center mb-8">
-        <h1 className="text-4xl font-bold text-indigo-400">YSWS Guides</h1>
-      </div>
-
-      <div className="box-out">
-        <p className="box-title">First, think of an idea!</p>
-        <p className="box-in">
-          To build with Gridfinity, start by asking: what item do you always
-          lose and need a home for? Maybe it's screws, craft supplies, or
-          electronics— imagine a custom bin that keeps those things organized
-          and easy to grab. What would look really cool on your workspace grid?
-        </p>
-      </div>
-
-      <div className="box-out">
-        <p className="box-title">Next, choose your CAD software of choice</p>
-        <p className="box-in">
-          Choose and install/open your CAD tool (FreeCAD, Onshape, etc.).
-          Then install WakaTime to track your design hours:
-          <ul className="list-disc list-inside mt-2 text-gray-300">
-            <li>
-              <a
-                href="https://github.com/Pegoku/FreeCAD-WakaTime"
-                className="text-indigo-400 underline"
-              >
-                FreeCAD-WakaTime
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://github.com/JeffreyWangDev/onshape-wakatime"
-                className="text-indigo-400 underline"
-              >
-                Onshape WakaTime
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://github.com/iamawatermelo/wakapi-anyide"
-                className="text-indigo-400 underline"
-              >
-                WakaTime AnyIDE
-              </a>
-            </li>
-          </ul>
-        </p>
-      </div>
-
-      <div className="box-out">
-        <p className="box-title">Start designing!</p>
-        <p className="box-in">
-          Now that your project is set up, begin designing your Gridfinity bin.
-          If you’re new to CAD, I recommend FreeCAD or Onshape:
-        </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
-          <Link
-            href="/guide/freecad"
-            className="block p-6 bg-gray-700 rounded-lg hover:bg-gray-600 transition"
-          >
-            <h2 className="text-2xl font-semibold mb-2 text-indigo-400">
-              FreeCAD Guide
-            </h2>
-            <p className="text-gray-300">
-              A step-by-step tutorial for building a Gridfinity bin in FreeCAD.
-            </p>
+    <div className="min-h-screen">
+      {/* Header */}
+      <section className="relative px-6 py-16 overflow-hidden">
+        <div className="hero-glow top-10 left-1/2 -translate-x-1/2" />
+        <div className="section text-center">
+          <Link href="/" className="text-gray-400 hover:text-indigo-400 text-sm mb-4 inline-block">
+            ← Back to home
           </Link>
-          <Link
-            href="/guide/onshape"
-            className="block p-6 bg-gray-700 rounded-lg hover:bg-gray-600 transition"
-          >
-            <h2 className="text-2xl font-semibold mb-2 text-indigo-400">
-              Onshape Guide
-            </h2>
-            <p className="text-gray-300">
-              A step-by-step tutorial for building a Gridfinity bin in Onshape.
-            </p>
-          </Link>
-          
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">
+            Getting <span className="text-indigo-400">Started</span>
+          </h1>
+          <p className="text-gray-400 max-w-lg mx-auto">
+            New to CAD? Follow these steps to design your first Gridfinity bin.
+          </p>
         </div>
-      </div>
+      </section>
+
+      {/* Steps */}
+      <main className="px-6 pb-20 space-y-8">
+        <div className="section">
+          <div className="card">
+            <h2 className="card-title">
+              <span className="bg-indigo-500/20 text-indigo-400 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold">1</span>
+              Think of an idea
+            </h2>
+            <p className="card-content">
+              To build with Gridfinity, start by asking: what item do you always
+              lose and need a home for? Maybe it's screws, craft supplies, or
+              electronics— imagine a custom bin that keeps those things organized
+              and easy to grab. What would look really cool on your workspace grid?
+            </p>
+          </div>
+        </div>
+
+        <div className="section">
+          <div className="card">
+            <h2 className="card-title">
+              <span className="bg-indigo-500/20 text-indigo-400 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold">2</span>
+              Choose your CAD software
+            </h2>
+            <div className="card-content">
+              <p className="mb-4">
+                Choose and install/open your CAD tool (FreeCAD, Onshape, etc.).
+                Then install WakaTime to track your design hours:
+              </p>
+              <ul className="space-y-2">
+                <li className="flex items-center gap-2">
+                  <span className="text-indigo-400">→</span>
+                  <a href="https://github.com/Pegoku/FreeCAD-WakaTime">
+                    FreeCAD-WakaTime
+                  </a>
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="text-indigo-400">→</span>
+                  <a href="https://github.com/JeffreyWangDev/onshape-wakatime">
+                    Onshape WakaTime
+                  </a>
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="text-indigo-400">→</span>
+                  <a href="https://github.com/iamawatermelo/wakapi-anyide">
+                    WakaTime AnyIDE
+                  </a>
+                  <span className="text-gray-500 text-sm">(for other tools)</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div className="section">
+          <div className="card">
+            <h2 className="card-title">
+              <span className="bg-indigo-500/20 text-indigo-400 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold">3</span>
+              Start designing!
+            </h2>
+            <p className="card-content mb-6">
+              Now that your project is set up, begin designing your Gridfinity bin.
+              If you're new to CAD, pick one of these guides:
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <Link
+                href="/guide/freecad"
+                className="group p-5 bg-gray-700/50 border border-gray-600/50 rounded-xl hover:border-indigo-500/50 hover:bg-gray-700 transition-all"
+              >
+                <h3 className="text-xl font-semibold mb-2 text-indigo-400 group-hover:text-indigo-300">
+                  FreeCAD Guide
+                </h3>
+                <p className="text-gray-400 text-sm">
+                  A step-by-step tutorial for building a Gridfinity bin in FreeCAD.
+                </p>
+              </Link>
+              <Link
+                href="/guide/onshape"
+                className="group p-5 bg-gray-700/50 border border-gray-600/50 rounded-xl hover:border-indigo-500/50 hover:bg-gray-700 transition-all"
+              >
+                <h3 className="text-xl font-semibold mb-2 text-indigo-400 group-hover:text-indigo-300">
+                  Onshape Guide
+                </h3>
+                <p className="text-gray-400 text-sm">
+                  A step-by-step tutorial for building a Gridfinity bin in Onshape.
+                </p>
+              </Link>
+            </div>
+          </div>
+        </div>
+
+        {/* Back to submit */}
+        <div className="section pt-4">
+          <div className="text-center">
+            <p className="text-gray-400 mb-4">Done designing?</p>
+            <a
+              href="https://forms.hackclub.com/shipfinity"
+              className="btn btn-primary"
+            >
+              Submit Your Project →
+            </a>
+          </div>
+        </div>
+      </main>
     </div>
   );
 }

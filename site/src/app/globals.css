@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #111827;
+  --foreground: #f3f4f6;
 }
 
 @theme inline {
@@ -12,30 +12,49 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 html, body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), system-ui, sans-serif;
+  scroll-behavior: smooth;
 }
 
-a{
-  @apply text-indigo-400 underline
+a {
+  @apply text-indigo-400 hover:text-indigo-300 transition-colors;
 }
 
-.box-title {
-  @apply text-lg font-bold uppercase text-indigo-400;
+a:not(.btn) {
+  @apply underline underline-offset-2;
 }
 
-.box-out{
-  @apply bg-gray-900 text-gray-100 p-6 rounded-lg shadow-md border border-gray-700 mt-8
+.section {
+  @apply max-w-3xl mx-auto;
 }
-.box-in{
-  @apply bg-gray-800 text-gray-300 p-6 rounded-lg shadow-md mt-4
+
+.card {
+  @apply bg-gray-800/50 backdrop-blur border border-gray-700/50 rounded-xl p-6 hover:border-indigo-500/30 transition-all duration-300;
+}
+
+.card-title {
+  @apply text-xl font-semibold text-indigo-400 mb-3 flex items-center gap-2;
+}
+
+.card-content {
+  @apply text-gray-300 leading-relaxed;
+}
+
+.btn {
+  @apply inline-flex items-center gap-2 px-6 py-3 rounded-lg font-medium transition-all duration-200 no-underline;
+}
+
+.btn-primary {
+  @apply bg-indigo-600 text-white hover:bg-indigo-500 hover:scale-105 active:scale-95;
+}
+
+.btn-outline {
+  @apply border border-indigo-500 text-indigo-400 hover:bg-indigo-500/10;
+}
+
+.hero-glow {
+  @apply absolute -z-10 w-96 h-96 bg-indigo-600/20 rounded-full blur-3xl;
 }
