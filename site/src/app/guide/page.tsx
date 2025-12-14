@@ -111,7 +111,7 @@ export default function GuidesPage() {
           <div className="text-center">
             <p className="text-gray-400 mb-4">Done designing?</p>
             <a
-              href="https://forms.hackclub.com/shipfinity"
+              href="https://forms.hackclub.com/t/e4RhUQhpuUus"
               className="btn btn-primary"
             >
               Submit Your Project

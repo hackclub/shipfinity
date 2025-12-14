@@ -286,7 +286,7 @@ export default function FreeCADGuide() {
               Export your design and submit it to get your filament grant!
             </p>
             <a
-              href="https://forms.hackclub.com/shipfinity"
+              href="https://forms.hackclub.com/t/e4RhUQhpuUus"
               className="btn btn-primary text-lg px-8 py-4"
             >
               Submit Your Project
