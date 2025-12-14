@@ -55,6 +55,11 @@ a:not(.btn) {
   @apply border border-indigo-500 text-indigo-400 hover:bg-indigo-500/10;
 }
 
+.btn:focus-visible,
+a:focus-visible {
+  @apply outline-none ring-2 ring-indigo-500/60 ring-offset-2 ring-offset-gray-900;
+}
+
 .hero-glow {
   @apply absolute -z-10 w-96 h-96 bg-indigo-600/20 rounded-full blur-3xl;
 }

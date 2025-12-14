@@ -8,7 +8,7 @@ export default function GuidesPage() {
         <div className="hero-glow top-10 left-1/2 -translate-x-1/2" />
         <div className="section text-center">
           <Link href="/" className="text-gray-400 hover:text-indigo-400 text-sm mb-4 inline-block">
-            ← Back to home
+            Back to home
           </Link>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
             Getting <span className="text-indigo-400">Started</span>
@@ -47,24 +47,21 @@ export default function GuidesPage() {
                 Choose and install/open your CAD tool (FreeCAD, Onshape, etc.).
                 Then install WakaTime to track your design hours:
               </p>
-              <ul className="space-y-2">
-                <li className="flex items-center gap-2">
-                  <span className="text-indigo-400">→</span>
+              <ul className="list-disc list-inside space-y-2">
+                <li>
                   <a href="https://github.com/Pegoku/FreeCAD-WakaTime">
                     FreeCAD-WakaTime
                   </a>
                 </li>
-                <li className="flex items-center gap-2">
-                  <span className="text-indigo-400">→</span>
+                <li>
                   <a href="https://github.com/JeffreyWangDev/onshape-wakatime">
                     Onshape WakaTime
                   </a>
                 </li>
-                <li className="flex items-center gap-2">
-                  <span className="text-indigo-400">→</span>
+                <li>
                   <a href="https://github.com/iamawatermelo/wakapi-anyide">
                     WakaTime AnyIDE
-                  </a>
+                  </a>{" "}
                   <span className="text-gray-500 text-sm">(for other tools)</span>
                 </li>
               </ul>
@@ -117,7 +114,7 @@ export default function GuidesPage() {
               href="https://forms.hackclub.com/shipfinity"
               className="btn btn-primary"
             >
-              Submit Your Project →
+              Submit Your Project
             </a>
           </div>
         </div>

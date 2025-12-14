@@ -9,7 +9,7 @@ export default function OnShapeGuide() {
         <div className="hero-glow top-10 left-1/2 -translate-x-1/2" />
         <div className="section text-center">
           <Link href="/guide" className="text-gray-400 hover:text-indigo-400 text-sm mb-4 inline-block">
-            ← Back to guides
+            Back to guides
           </Link>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
             <span className="text-indigo-400">Onshape</span> Guide
@@ -277,7 +277,7 @@ export default function OnShapeGuide() {
 
         {/* Submit CTA */}
         <div className="section pt-8">
-          <div className="card bg-gradient-to-br from-indigo-900/40 to-gray-800/50 border-indigo-500/30 text-center py-10">
+          <div className="card bg-gray-800/60 border-indigo-500/30 text-center py-10">
             <h2 className="text-2xl font-bold text-white mb-2">All done?</h2>
             <p className="text-gray-400 mb-6">
               Export your design and submit it to get your filament grant!
@@ -286,7 +286,7 @@ export default function OnShapeGuide() {
               href="https://forms.hackclub.com/shipfinity"
               className="btn btn-primary text-lg px-8 py-4"
             >
-              Submit Your Project 🚢
+              Submit Your Project
             </a>
           </div>
         </div>

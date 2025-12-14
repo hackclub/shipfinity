@@ -17,10 +17,10 @@ export default function Home() {
           </p>
           <div className="flex flex-wrap gap-4 justify-center mb-12">
             <Link href="/guide" className="btn btn-primary">
-              Get Started →
+              Get Started
             </Link>
             <a
-              href="https://hackclub.slack.com/archives/C08EEU7T4GM"
+              href="https://hackclub.enterprise.slack.com/archives/C08EEU7T4GM"
               className="btn btn-outline"
             >
               Join #shipfinity
@@ -157,7 +157,7 @@ export default function Home() {
               New to CAD?{" "}
               <Link href="/guide">Check out our beginner's guide</Link> to get
               started. Don't forget to join the{" "}
-              <a href="https://hackclub.slack.com/archives/C08EEU7T4GM">
+              <a href="https://hackclub.enterprise.slack.com/archives/C08EEU7T4GM">
                 #shipfinity
               </a>{" "}
               channel on Slack!
@@ -165,14 +165,14 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="section pt-8">
-          <div className="card bg-gradient-to-br from-indigo-900/40 to-gray-800/50 border-indigo-500/30 text-center py-10">
+        <div className="section pt-8" id="submit">
+          <div className="card bg-gray-800/60 border-indigo-500/30 text-center py-10">
             <h2 className="text-2xl font-bold text-white mb-2">Ready to ship?</h2>
             <p className="text-gray-400 mb-6">
               Finished your bin? Submit your project and get your filament grant!
             </p>
             <a
-              href="https://forms.hackclub.com/t/e4RhUQhpuUus"
+              href="https://forms.hackclub.com/shipfinity"
               className="btn btn-primary text-lg px-8 py-4"
             >
               Submit Your Project
@@ -184,7 +184,7 @@ export default function Home() {
       <footer className="border-t border-gray-800 px-6 py-8">
         <div className="section text-center text-gray-500 text-sm">
           <p>
-            Made with ❤️ by{" "}
+            Made by{" "}
             <a href="https://github.com/Pegoku" className="text-indigo-400">
               Pegoku
             </a>{" "}
