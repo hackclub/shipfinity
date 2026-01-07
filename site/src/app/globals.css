@@ -63,3 +63,30 @@ a:focus-visible {
 .hero-glow {
   @apply absolute -z-10 w-96 h-96 bg-indigo-600/20 rounded-full blur-3xl;
 }
+
+/* Legacy box classes for original theme */
+.box-title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #818cf8;
+}
+
+.box-out {
+  background-color: #0f172a;
+  color: #f3f4f6;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  border: 1px solid #374151;
+  margin-top: 2rem;
+}
+
+.box-in {
+  background-color: #1e293b;
+  color: #d1d5db;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  margin-top: 1rem;
+}
