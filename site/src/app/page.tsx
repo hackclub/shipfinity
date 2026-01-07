@@ -34,7 +34,7 @@ export default function Home() {
       <div className="box-out">
         <h2 className="box-title">What are the requirements?</h2>
         <p className="box-in">
-          1. Spend at least (TBD) hours designing the bins <br />
+          1. Spend at least 4 hours designing the bins <br />
           2. Your submission must be unique. You may be asked to clarify why
           your bin is better/different if a similar 3D model already exists{" "}
           <br />
