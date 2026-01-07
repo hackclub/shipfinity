@@ -3,39 +3,45 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="min-h-screen">
-      {/* Hero Section */}
-      <section className="relative px-6 py-20 md:py-32 overflow-hidden">
-        <div className="hero-glow top-20 left-1/2 -translate-x-1/2" />
-        <div className="section text-center">
-          <h1 className="text-5xl md:text-6xl font-bold mb-4">
-            <span className="text-indigo-400">Ship</span>finity
-          </h1>
-          <p className="text-xl text-gray-400 mb-8 max-w-xl mx-auto">
-            A Hack Club YSWS where you ship a Gridfinity bin, and we'll send you
-            it (or filament)!
-          </p>
-          <div className="flex flex-wrap gap-4 justify-center mb-12">
-            <Link href="/guide" className="btn btn-primary">
-              Get Started
-            </Link>
-            <a
-              href="https://hackclub.enterprise.slack.com/archives/C08EEU7T4GM"
-              className="btn btn-outline"
-            >
-              Join #shipfinity
-            </a>
-          </div>
-          <Image
-            src="/bin3.png"
-            alt="Gridfinity bin example"
-            className="rounded-2xl border border-gray-700/50 shadow-2xl shadow-indigo-500/10 mx-auto"
-            width={480}
-            height={480}
-            priority
-          />
-        </div>
-      </section>
+    <div className="p-10 bg-gray-800 text-gray-100">
+      <div className="flex flex-col items-center">
+        <h1 className="text-4xl font-bold text-indigo-400">Shipfinity</h1>
+        <p className="mt-4 text-gray-300">
+          A Hack Club YSWS where you ship a Gridfinity bin, and we'll send you
+          it (or filament)!
+        </p>
+        <br />
+        <Image
+          src="/bin3.png"
+          alt="bin3"
+          className="border border-gray-700 rounded-lg"
+          width={500}
+          height={500}
+        />
+      </div>
+      <div className="box-out">
+        <h2 className="box-title">What is Gridfinity?</h2>
+        <p className="box-in">
+          Gridfinity is a modular, open-source grid storage system designed for
+          workshops and other workspaces to help with organization. It uses a
+          standardized grid pattern (42x42mm) and modular bins that can be
+          customized to fit various tools, parts, or supplies. The system is
+          highly flexible, allowing users to create tailored storage solutions
+          that maximize efficiency and minimize clutter.
+        </p>
+      </div>
+      <br />
+      <div className="box-out">
+        <h2 className="box-title">What are the requirements?</h2>
+        <p className="box-in">
+          1. Spend at least (TBD) hours designing the bins <br />
+          2. Your submission must be unique. You may be asked to clarify why
+          your bin is better/different if a similar 3D model already exists{" "}
+          <br />
+          3. Your submission must have a purpose <br />
+          4. You must be 18 or under.
+        </p>
+      </div>
 
       {/* Main Content */}
       <main className="px-6 pb-20 space-y-8">
