@@ -5,9 +5,6 @@ export default function Home() {
   return (
     <div className="p-10 bg-gray-800 text-gray-100">
       <div className="flex flex-col items-center text-center">
-        <p className="text-sm font-semibold uppercase tracking-[0.2em] text-indigo-300">
-          Hack Club YSWS
-        </p>
         <h1 className="mt-2 text-4xl font-bold text-indigo-400">
           Shipfinity
         </h1>

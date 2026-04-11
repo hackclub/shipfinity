@@ -30,8 +30,18 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <header className="sticky top-0 z-50 border-b border-gray-800 bg-gray-900/80 backdrop-blur">
-          <div className="section px-6 py-3 flex items-center justify-between">
+        <header className="sticky top-0 z-50 border-b border-gray-800 bg-gray-900/80 backdrop-blur relative">
+          <a
+            href="https://hackclub.com/"
+            className="absolute top-0 left-[5vw] z-999 border-0 no-underline"
+          >
+            <img
+              src="https://assets.hackclub.com/flag-orpheus-top.svg"
+              alt="Hack Club"
+              className="w-64 border-0 hover:rotate-5 transition"
+            />
+          </a>
+          <div className="section px-6 pl-24 sm:pl-6 py-3 flex items-center justify-between">
             <Link
               href="/"
               className="font-semibold text-gray-100 hover:text-indigo-300 no-underline"
