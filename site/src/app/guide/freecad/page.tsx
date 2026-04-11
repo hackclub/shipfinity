@@ -10,13 +10,12 @@ export default function FreeCADGuide() {
       <div className="box-out">
         <p className="box-title">0. Recommendation</p>
         <p className="box-in">
-          For a deeper understanding of how FreeCAD works, watch a tutorial
-          such as{" "}
+          If you are new to CAD, watch this beginner-friendly playlist{" "}
           <a
             className="text-indigo-400 underline"
             href="https://www.youtube.com/watch?v=t_yh_S31R9g&list=PLWuyJLVUNtc3kYxQQiOriVJiTbQ0qNBXh"
           >
-            this one
+            here
           </a>, especially the <em>Part Design</em> workbench section.
         </p>
       </div>
