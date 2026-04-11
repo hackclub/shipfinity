@@ -32,7 +32,7 @@ export default function FreeCADGuide() {
           className="border border-gray-700 rounded-lg object-contain"
         />
         <p className="box-in">
-          Launch FreeCAD from your system. Ensure you have an up to date
+          Launch FreeCAD from your system. Ensure you have an up-to-date
           version.
         </p>
       </div>
@@ -104,13 +104,13 @@ export default function FreeCADGuide() {
           className="border border-gray-700 rounded-lg object-contain"
         />
         <p className="box-in">
-          For this guide, we will be designing a 1x2 bin for holding sd cards
-          and pens. We will be basing our design in the official{" "}
+          For this guide, we will be designing a 1x2 bin for holding SD cards
+          and pens. We will be basing our design on the official{" "}
           <a
             className="text-indigo-400 underline"
             href="https://gridfinity.xyz/specification/"
           >
-            gridfinity design specification
+            Gridfinity design specification.
           </a>
         </p>
       </div>
@@ -167,8 +167,8 @@ export default function FreeCADGuide() {
         <p className="box-in">
           Now that we have the base shape of the bin, we can extrude it to give
           it height. Use the <em>Pad</em> tool and set the desired height. It is
-          recommended to set the height to multiples of 7mm + 4.4mm to the final
-          height so it aligns with the gridfinity specification.
+          recommended to set the height to multiples of 7mm + 4.4mm for the
+          final height so it aligns with the Gridfinity specification.
         </p>
       </div>
 
@@ -328,11 +328,11 @@ export default function FreeCADGuide() {
             />
           </div>
           To add the magnets and screw holes, select the bottom square face, and
-          create a new sketch. Then, using the <em>Circle from Center</em> tool, create
-          a 6.5mm circle with its center 4.8mm away from the square's edge.
-          Use <em>Pocket</em> with a depth of 2mm, and press the hole face that
-          has been done and press the <em>Hole</em> tool. Set the <em>Diameter</em> to 3mm, and{" "}
-          <em>Depth</em> to 2.75mm.
+          create a new sketch. Then, using the <em>Circle from Center</em> tool,
+          create a 6.5mm circle with its center 4.8mm away from the square's
+          edge. Use <em>Pocket</em> with a depth of 2mm, then select the hole
+          face you just created and press the <em>Hole</em> tool. Set the{" "}
+          <em>Diameter</em> to 3mm and the <em>Depth</em> to 2.75mm.
         </p>
         <p className="box-in">
           <Image
@@ -342,8 +342,9 @@ export default function FreeCADGuide() {
             height={400}
             className="border border-gray-700 rounded-lg object-contain"
           />
-          Finally, using the <em>Linear Pattern</em> tool, select BOTH the magnet and
-          screw hole features, and set both directions spacing to 26mm.
+          Finally, using the <em>Linear Pattern</em> tool, select both the
+          magnet and screw hole features, and set both direction spacings to
+          26mm.
         </p>
       </div>
 
@@ -388,15 +389,16 @@ export default function FreeCADGuide() {
       <div className="box-out">
         <p className="box-title">15. Pen holes</p>
         <p className="box-in">
-            <Image
-              src="/freecad/img_25.png"
-              alt="FreeCAD"
-              width={1024}
-              height={400}
-              className="border border-gray-700 rounded-lg object-contain"
-            />
-          To add the pen holes, the process is the same as the SD card holes, but instead of a 2.4x21mm rectangle, we will create a 12mm diameter circle that is 1.5mm away from the borders.
-          
+          <Image
+            src="/freecad/img_25.png"
+            alt="FreeCAD"
+            width={1024}
+            height={400}
+            className="border border-gray-700 rounded-lg object-contain"
+          />
+          To add the pen holes, the process is the same as for the SD card
+          holes, but instead of a 2.4x21mm rectangle, we will create a 12mm
+          diameter circle that is 1.5mm away from the borders.
         </p>
       </div>
 
