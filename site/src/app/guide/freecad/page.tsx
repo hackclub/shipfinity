@@ -10,15 +10,14 @@ export default function FreeCADGuide() {
       <div className="box-out">
         <p className="box-title">0. Recommendation</p>
         <p className="box-in">
-          To have a deeper understanding of how FreeCAD works, it is recommended
-          to watch a tutorial (e.g.{" "}
+          For a deeper understanding of how FreeCAD works, watch a tutorial
+          such as{" "}
           <a
             className="text-indigo-400 underline"
             href="https://www.youtube.com/watch?v=t_yh_S31R9g&list=PLWuyJLVUNtc3kYxQQiOriVJiTbQ0qNBXh"
           >
             this one
-          </a>
-          ) especially the <em>Part Design</em> workbench section.
+          </a>, especially the <em>Part Design</em> workbench section.
         </p>
       </div>
 
@@ -32,8 +31,8 @@ export default function FreeCADGuide() {
           className="border border-gray-700 rounded-lg object-contain"
         />
         <p className="box-in">
-          Launch FreeCAD from your system. Ensure you have an up-to-date
-          version.
+          Launch FreeCAD from your system. Ensure that you have an up-to-date
+          version of FreeCAD.
         </p>
       </div>
 
@@ -52,7 +51,7 @@ export default function FreeCADGuide() {
       </div>
 
       <div className="box-out">
-        <p className="box-title">3. Install the FreeCAD‑WakaTime Addon</p>
+        <p className="box-title">3. Install the FreeCAD-WakaTime Addon</p>
         <Image
           src="/freecad/img_2.png"
           alt="FreeCAD"
@@ -76,13 +75,13 @@ export default function FreeCADGuide() {
         />
         <p className="box-in">
           After restarting, <strong>enable FreeCAD-WakaTime</strong> by going to
-          the <em>WakaTime</em> workbench, and pressing the <em>Toggle WakaTime</em>{" "}
+          the <em>WakaTime</em> workbench and pressing the <em>Toggle WakaTime</em>{" "}
           button. Then, wait for the console to show <em>[WakaTime] Activated.</em>
         </p>
       </div>
 
       <div className="box-out">
-        <p className="box-title">5. Create a New Parametric Part</p>
+        <p className="box-title">5. Create a New Parametric Body</p>
         <Image
           src="/freecad/img_0.png"
           alt="FreeCAD"
@@ -95,7 +94,7 @@ export default function FreeCADGuide() {
         </p>
       </div>
       <div className="box-out">
-        <p className="box-title">6. Start the Bin design</p>
+        <p className="box-title">6. Start the Bin Design</p>
         <Image
           src="/freecad/gf-design.png"
           alt="FreeCAD"
@@ -110,13 +109,13 @@ export default function FreeCADGuide() {
             className="text-indigo-400 underline"
             href="https://gridfinity.xyz/specification/"
           >
-            Gridfinity design specification.
-          </a>
+            Gridfinity design specification
+          </a>.
         </p>
       </div>
 
       <div className="box-out">
-        <p className="box-title">7. Create base Sketch</p>
+        <p className="box-title">7. Create the Base Sketch</p>
         <Image
           src="/freecad/img_5.png"
           alt="FreeCAD"
@@ -148,8 +147,9 @@ export default function FreeCADGuide() {
         />
         <p className="box-in">
           Define the bin size according to your needs (e.g. 1x2). To calculate
-          the width of the bin, you should multiply the number of units by 42mm.
-          For example, a 1x2 bin would be (1*42) mm wide and (2*42) mm long.
+          the width and length of the bin, multiply the number of units by
+          42mm. For example, a 1x2 bin would be (1 x 42) mm wide and (2 x 42)
+          mm long.
         </p>
       </div>
 
@@ -188,7 +188,7 @@ export default function FreeCADGuide() {
       </div>
 
       <div className="box-out">
-        <p className="box-title">11. Top lip</p>
+        <p className="box-title">11. Top Lip</p>
         <p className="box-in">
           <Image
             src="/freecad/img_9.png"
@@ -218,7 +218,7 @@ export default function FreeCADGuide() {
               className="border border-gray-700 rounded-lg object-contain w-full h-auto"
             />
           </div>
-          Then, to the resulting face, create a new <em>Pocket</em> of 1.8mm and
+          Then, on the resulting face, create a new <em>Pocket</em> of 1.8mm and
           0º.
         </p>
         <p className="box-in">
@@ -230,12 +230,12 @@ export default function FreeCADGuide() {
             className="border border-gray-700 rounded-lg object-contain"
           />
           Finally, create another <em>Pocket</em> of 0.7mm and -45º. This will
-          create the characteristic lip of the gridfinity bins.
+          create the characteristic lip of the Gridfinity bins.
         </p>
       </div>
 
       <div className="box-out">
-        <p className="box-title">12. Bottom of the bin</p>
+        <p className="box-title">12. Bottom of the Bin</p>
         <p className="box-in">
           <Image
             src="/freecad/img_13.png"
@@ -276,9 +276,9 @@ export default function FreeCADGuide() {
               className="border border-gray-700 rounded-lg object-contain"
             />
           </div>
-          After that, click again on the face, and create a new sketch. Create a
-          rectangle (37.7 x 2.15 mm) that is in the middle of the body (like in
-          the image). Once again, exit the sketch, and create a 2.6mm <em>Pocket</em>.
+          After that, click the face again and create a new sketch. Create a
+          rectangle (37.7 x 2.15 mm) in the middle of the body, as shown in the
+          image. Then, exit the sketch and create a 2.6mm <em>Pocket</em>.
         </p>
         <p className="box-in">
           <Image
@@ -302,14 +302,14 @@ export default function FreeCADGuide() {
             height={400}
             className="border border-gray-700 rounded-lg object-contain"
           />
-          Next, fillet the lateral edges of the squares that we just created
+          Next, fillet the lateral edges of the squares you just created
           with a radius of 1.6mm; chamfer the top faces of the squares with
           0.8mm; and finally, create a 2.14mm chamfer on the next face.
         </p>
       </div>
 
       <div className="box-out">
-        <p className="box-title">13. Magnet and screw holes</p>
+        <p className="box-title">13. Magnet and Screw Holes</p>
         <p className="box-in">
           <div className="grid grid-cols-2 gap-4 my-4">
             <Image
@@ -343,23 +343,23 @@ export default function FreeCADGuide() {
             className="border border-gray-700 rounded-lg object-contain"
           />
           Finally, using the <em>Linear Pattern</em> tool, select both the
-          magnet and screw hole features, and set both direction spacings to
+          magnet and screw hole features and set both direction spacings to
           26mm.
         </p>
       </div>
 
       <div className="box-out">
-        <p className="box-title">Base bin done</p>
+        <p className="box-title">Base Bin Complete</p>
         <p className="box-in">
-          Now your base bin is done! You can stop following the guide here and
+          Your base bin is now complete. You can stop following the guide here and
           start customizing your bin by adding dividers, holes, or any other
           feature you want, or you can continue following the guide if you would
-          like to know how you can do so.
+          like to see how to do so.
         </p>
       </div>
 
       <div className="box-out">
-        <p className="box-title">14. SD card holes</p>
+        <p className="box-title">14. SD Card Holes</p>
         <p className="box-in">
           <div className="grid grid-cols-2 gap-4 my-4">
             <Image
@@ -377,17 +377,17 @@ export default function FreeCADGuide() {
               className="border border-gray-700 rounded-lg object-contain"
             />
           </div>
-          To add the SD card holes, we will first select the top face of the
-          bin, and create a new sketch. Then, we will create a 2.4x21mm
+          To add the SD card holes, first select the top face of the bin and
+          create a new sketch. Then, create a 2.4 x 21mm
           rectangle that is 1.5mm away from the borders.
           <br />
-          Then, we will use the <em>Linear Pattern</em> tool to create a total
-          of 8 occurrences.
+          Then, use the <em>Linear Pattern</em> tool to create a total of 8
+          occurrences.
         </p>
       </div>
 
       <div className="box-out">
-        <p className="box-title">15. Pen holes</p>
+        <p className="box-title">15. Pen Holes</p>
         <p className="box-in">
           <Image
             src="/freecad/img_25.png"
@@ -397,7 +397,7 @@ export default function FreeCADGuide() {
             className="border border-gray-700 rounded-lg object-contain"
           />
           To add the pen holes, the process is the same as for the SD card
-          holes, but instead of a 2.4x21mm rectangle, we will create a 12mm
+          holes, but instead of a 2.4 x 21mm rectangle, create a 12mm
           diameter circle that is 1.5mm away from the borders.
         </p>
       </div>
