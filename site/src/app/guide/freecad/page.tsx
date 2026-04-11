@@ -18,7 +18,7 @@ export default function FreeCADGuide() {
           >
             this one
           </a>
-          ) especially the Part Design workbench section.
+          ) especially the <em>Part Design</em> workbench section.
         </p>
       </div>
 
@@ -47,7 +47,7 @@ export default function FreeCADGuide() {
           className="border border-gray-700 rounded-lg object-contain"
         />
         <p className="box-in">
-          Go to <em>Tools &gt; Addon Manager</em> and search for "Wakatime”.
+          Go to <em>Tools &gt; Addon Manager</em> and search for <em>WakaTime</em>.
         </p>
       </div>
 
@@ -61,7 +61,7 @@ export default function FreeCADGuide() {
           className="border border-gray-700 rounded-lg object-contain"
         />
         <p className="box-in">
-          Install the FreeCAD-WakaTime Addon from the Addon Manager.
+          Install the FreeCAD-WakaTime Addon from the <em>Addon Manager</em>.
         </p>
       </div>
 
@@ -76,8 +76,8 @@ export default function FreeCADGuide() {
         />
         <p className="box-in">
           After restarting, <strong>enable FreeCAD-WakaTime</strong> by going to
-          the "WakaTime" workbench, and pressing the Toggle Wakatime button.
-          Then, wait for the console to show "[WakaTime] Activated."
+          the <em>WakaTime</em> workbench, and pressing the <em>Toggle WakaTime</em>{" "}
+          button. Then, wait for the console to show <em>[WakaTime] Activated.</em>
         </p>
       </div>
 
@@ -132,8 +132,8 @@ export default function FreeCADGuide() {
           className="border border-gray-700 rounded-lg object-contain"
         />
         <p className="box-in">
-          Create a new sketch by pressing the "New Sketch" button and Selecting
-          the top face (XY Plane).
+          Create a new sketch by pressing the <em>New Sketch</em> button and
+          selecting the top face (XY Plane).
         </p>
       </div>
 
@@ -166,7 +166,7 @@ export default function FreeCADGuide() {
         </div>
         <p className="box-in">
           Now that we have the base shape of the bin, we can extrude it to give
-          it height. Use the "Pad" tool and set the desired height. It is
+          it height. Use the <em>Pad</em> tool and set the desired height. It is
           recommended to set the height to multiples of 7mm + 4.4mm to the final
           height so it aligns with the gridfinity specification.
         </p>
@@ -182,8 +182,8 @@ export default function FreeCADGuide() {
           className="border border-gray-700 rounded-lg object-contain"
         />
         <p className="box-in">
-          Now, using the Fillet tool, select the four lateral edges of the bin,
-          and apply a 3.75mm fillet to them.
+          Now, using the <em>Fillet</em> tool, select the four lateral edges of
+          the bin, and apply a 3.75mm fillet to them.
         </p>
       </div>
 
@@ -197,8 +197,9 @@ export default function FreeCADGuide() {
             height={400}
             className="border border-gray-700 rounded-lg object-contain"
           />
-          Select the top face of the bin, and press the "Pocket" tool. Set the
-          "length" to 1.90 mm and the "taper angle" to -45º.
+          Select the top face of the bin, and press the <em>Pocket</em> tool.
+          Set the <em>Length</em> to 1.90 mm and the <em>Taper Angle</em> to
+          -45º.
         </p>
         <p className="box-in">
           <div className="grid grid-cols-2 gap-4 my-4">
@@ -217,7 +218,8 @@ export default function FreeCADGuide() {
               className="border border-gray-700 rounded-lg object-contain w-full h-auto"
             />
           </div>
-          Then, to the resulting face, create a new "Pocket" of 1.8mm and 0º.
+          Then, to the resulting face, create a new <em>Pocket</em> of 1.8mm and
+          0º.
         </p>
         <p className="box-in">
           <Image
@@ -227,8 +229,8 @@ export default function FreeCADGuide() {
             height={400}
             className="border border-gray-700 rounded-lg object-contain"
           />
-          Finally, create another "Pocket" of 0.7mm and -45º. This will create
-          the characteristic lip of the gridfinity bins.
+          Finally, create another <em>Pocket</em> of 0.7mm and -45º. This will
+          create the characteristic lip of the gridfinity bins.
         </p>
       </div>
 
@@ -243,9 +245,9 @@ export default function FreeCADGuide() {
             className="border border-gray-700 rounded-lg object-contain"
           />
           To create the bottom of the bin, select the bottom face, and create a
-          new Sketch. Then, using the external geometry tool, click on the face,
-          select the resulting edge, and using the "Offset" tool, crete a 2.15mm
-          offset.
+          new sketch. Then, using the <em>External Geometry</em> tool, click on
+          the face, select the resulting edge, and using the <em>Offset</em>{" "}
+          tool, create a 2.15mm offset.
         </p>
         <p className="box-in">
           <Image
@@ -255,7 +257,7 @@ export default function FreeCADGuide() {
             height={400}
             className="border border-gray-700 rounded-lg object-contain"
           />
-          Next, exit the sketch, and create a 2.6mm Pocket.
+          Next, exit the sketch, and create a 2.6mm <em>Pocket</em>.
         </p>
         <p className="box-in">
           <div className="grid grid-cols-2 gap-4 my-4">
@@ -276,7 +278,7 @@ export default function FreeCADGuide() {
           </div>
           After that, click again on the face, and create a new sketch. Create a
           rectangle (37.7 x 2.15 mm) that is in the middle of the body (like in
-          the image). Once again, exit the sketch, and create a 2.6mm Pocket.
+          the image). Once again, exit the sketch, and create a 2.6mm <em>Pocket</em>.
         </p>
         <p className="box-in">
           <Image
@@ -326,10 +328,11 @@ export default function FreeCADGuide() {
             />
           </div>
           To add the magnets and screw holes, select the bottom square face, and
-          create a new sketch. Then, using the "Circle from Center" tool, create
+          create a new sketch. Then, using the <em>Circle from Center</em> tool, create
           a 6.5mm circle with its center 4.8mm away from the square's edge.
-          Pocket it 2mm, and press the hole face that has been done and press
-          the "Hole" tool. Set the Diameter to 3mm, and Depth to 2.75mm.
+          Use <em>Pocket</em> with a depth of 2mm, and press the hole face that
+          has been done and press the <em>Hole</em> tool. Set the <em>Diameter</em> to 3mm, and{" "}
+          <em>Depth</em> to 2.75mm.
         </p>
         <p className="box-in">
           <Image
@@ -339,7 +342,7 @@ export default function FreeCADGuide() {
             height={400}
             className="border border-gray-700 rounded-lg object-contain"
           />
-          Finally, using the Linera Pattern tool, select BOTH the magnet and
+          Finally, using the <em>Linear Pattern</em> tool, select BOTH the magnet and
           screw hole features, and set both directions spacing to 26mm.
         </p>
       </div>
@@ -373,9 +376,12 @@ export default function FreeCADGuide() {
               className="border border-gray-700 rounded-lg object-contain"
             />
           </div>
-          To add the SD card holes, we will first, select the top face of the bin, and create a new sketch. Then, we will create a 2.4x21mm rectangle that is 1.5mm away from the borders.
+          To add the SD card holes, we will first select the top face of the
+          bin, and create a new sketch. Then, we will create a 2.4x21mm
+          rectangle that is 1.5mm away from the borders.
           <br />
-          Then, will use the Linear pattern tool to create a total of 8 occurrences. 
+          Then, we will use the <em>Linear Pattern</em> tool to create a total
+          of 8 occurrences.
         </p>
       </div>
 
