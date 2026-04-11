@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function GuidesPage() {
   return (
-    <div className="p-10 bg-gray-800 text-gray-100 min-h-screen">
+    <div className="min-h-screen bg-gray-800 p-6 text-gray-100 sm:p-10">
       <div className="flex flex-col items-center mb-8 text-center">
         <p className="text-sm font-semibold uppercase tracking-[0.2em] text-indigo-300">
           Guides and tutorials
@@ -17,7 +17,9 @@ export default function GuidesPage() {
         <p className="box-in">
           To build with Gridfinity, start by asking: what item do you always
           lose and need a home for? Maybe it's screws, craft supplies, or
-          electronics - imagine a custom bin that keeps those things organized
+          electronics.
+          <br />
+          Imagine a custom bin that keeps those things organized
           and easy to grab. What would look really cool on your workspace grid?
         </p>
       </div>
@@ -27,7 +29,7 @@ export default function GuidesPage() {
         <div className="box-in">
           <p>
             Choose and install or open your CAD tool, such as FreeCAD, Onshape,
-            or another CAD app. Then install Hackatime or WakaTime to track your
+            or another CAD app. Then install and configure Hackatime/Wakatime to track your
             design hours.
           </p>
           <p className="mt-4 font-semibold text-indigo-300">Useful trackers:</p>
@@ -53,7 +55,7 @@ export default function GuidesPage() {
                 href="https://github.com/iamawatermelo/wakapi-anyide"
                 className="text-indigo-400 underline"
               >
-                WakaTime AnyIDE for other CADs
+                WakaTime AnyIDE for other CAD software
               </a>
             </li>
           </ul>

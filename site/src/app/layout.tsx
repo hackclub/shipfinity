@@ -30,10 +30,10 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <header className="sticky top-0 z-50 border-b border-gray-800 bg-gray-900/80 backdrop-blur relative">
+        <header className="sticky top-0 z-50 border-b border-gray-800 bg-gray-900/80 backdrop-blur">
           <a
             href="https://hackclub.com/"
-            className="absolute top-0 left-[5vw] z-999 border-0 no-underline"
+            className="absolute top-0 left-[5vw] z-[999] border-0 no-underline"
           >
             <img
               src="https://assets.hackclub.com/flag-orpheus-top.svg"

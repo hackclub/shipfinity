@@ -18,6 +18,7 @@ body {
   color: var(--foreground);
   font-family: var(--font-sans), system-ui, sans-serif;
   scroll-behavior: smooth;
+  min-height: 100%;
 }
 
 a {
@@ -70,6 +71,7 @@ a:focus-visible {
   font-size: 1.125rem;
   font-weight: 700;
   text-transform: uppercase;
+  letter-spacing: 0.04em;
   color: #818cf8;
 }
 
@@ -80,7 +82,8 @@ a:focus-visible {
   border-radius: 0.5rem;
   box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   border: 1px solid #374151;
-  margin-top: 2rem;
+  margin: 2rem auto 0;
+  max-width: 64rem;
 }
 
 .box-in {
@@ -90,6 +93,11 @@ a:focus-visible {
   border-radius: 0.5rem;
   box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   margin-top: 1rem;
+  line-height: 1.7;
+
+  img {
+    margin-bottom: 1rem;
+  }
 }
 
 .box-list {

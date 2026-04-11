@@ -3,19 +3,16 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="p-10 bg-gray-800 text-gray-100">
+    <div className="min-h-screen bg-gray-800 p-6 text-gray-100 sm:p-10">
       <div className="flex flex-col items-center text-center">
-        <h1 className="mt-2 text-4xl font-bold text-indigo-400">
-          Shipfinity
-        </h1>
+        <h1 className="mt-2 text-4xl font-bold text-indigo-400">Shipfinity</h1>
         <p className="mt-4 max-w-2xl text-gray-300">
           Design a Gridfinity bin, get it printed.
         </p>
-        <br />
         <Image
           src="/bin3.png"
           alt="Gridfinity bin"
-          className="border border-gray-700 rounded-lg"
+          className="mt-8 max-w-full rounded-lg border border-gray-700 shadow-xl"
           width={500}
           height={500}
           priority
@@ -26,9 +23,7 @@ export default function Home() {
         <h2 className="box-title">What is Gridfinity?</h2>
         <p className="box-in">
           Gridfinity is a modular 42x42mm storage system used to organize desks,
-          workshops, or any space where the bins fit. The goal is simple: learn
-          the basics of CAD by shipping a real 3D model and publishing it. It
-          will also give you an incentive to organize your spaces.
+          workshops, or any space where the bins fit.
         </p>
       </div>
 
@@ -104,8 +99,7 @@ export default function Home() {
               <a href="https://www.printables.com/model/719729-gridfinity-complete-kitchen-collection-w-modular-e">
                 Gridfinity Kitchen Collection
               </a>{" "}
-              - A complete set of Kitchenware bins for Gridfinity of all sizes +
-              expandable and modular pieces.
+              - A complete set of Kitchenware bins for Gridfinity of all sizes
             </li>
           </ul>
         </div>
