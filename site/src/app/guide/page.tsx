@@ -3,32 +3,41 @@ import Link from "next/link";
 export default function GuidesPage() {
   return (
     <div className="p-10 bg-gray-800 text-gray-100 min-h-screen">
-      <div className="flex flex-col items-center mb-8">
-        <h1 className="text-4xl font-bold text-indigo-400">YSWS Guides</h1>
+      <div className="flex flex-col items-center mb-8 text-center">
+        <p className="text-sm font-semibold uppercase tracking-[0.2em] text-indigo-300">
+          Guides and tutorials
+        </p>
+        <h1 className="mt-2 text-4xl font-bold text-indigo-400">
+          How to ship
+        </h1>
       </div>
 
       <div className="box-out">
-        <p className="box-title">First, think of an idea!</p>
+        <p className="box-title">1. Think of an idea</p>
         <p className="box-in">
           To build with Gridfinity, start by asking: what item do you always
           lose and need a home for? Maybe it's screws, craft supplies, or
-          electronics— imagine a custom bin that keeps those things organized
+          electronics - imagine a custom bin that keeps those things organized
           and easy to grab. What would look really cool on your workspace grid?
         </p>
       </div>
 
       <div className="box-out">
-        <p className="box-title">Next, choose your CAD software of choice</p>
+        <p className="box-title">2. Choose your CAD software</p>
         <div className="box-in">
-          Choose and install/open your CAD tool (FreeCAD, Onshape, etc.).
-          Then install WakaTime to track your design hours:
-          <ul className="list-disc list-inside mt-2 text-gray-300">
+          <p>
+            Choose and install or open your CAD tool, such as FreeCAD, Onshape,
+            or another CAD app. Then install Hackatime or WakaTime to track your
+            design hours.
+          </p>
+          <p className="mt-4 font-semibold text-indigo-300">Useful trackers:</p>
+          <ul className="list-disc list-inside mt-2 space-y-2 text-gray-300">
             <li>
               <a
                 href="https://github.com/Pegoku/FreeCAD-WakaTime"
                 className="text-indigo-400 underline"
               >
-                FreeCAD-WakaTime
+                FreeCAD-WakaTime Plugin
               </a>
             </li>
             <li>
@@ -44,7 +53,7 @@ export default function GuidesPage() {
                 href="https://github.com/iamawatermelo/wakapi-anyide"
                 className="text-indigo-400 underline"
               >
-                WakaTime AnyIDE
+                WakaTime AnyIDE for other CADs
               </a>
             </li>
           </ul>
@@ -52,10 +61,10 @@ export default function GuidesPage() {
       </div>
 
       <div className="box-out">
-        <p className="box-title">Start designing!</p>
+        <p className="box-title">3. Start designing</p>
         <p className="box-in">
           Now that your project is set up, begin designing your Gridfinity bin.
-          If you're new to CAD, I recommend FreeCAD or Onshape:
+          If you're new to CAD, pick one of the beginner-friendly guides below:
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
           <Link
@@ -66,7 +75,8 @@ export default function GuidesPage() {
               FreeCAD Guide
             </h2>
             <p className="text-gray-300">
-              A step-by-step tutorial for building a Gridfinity bin in FreeCAD.
+              A step-by-step tutorial for building a Gridfinity bin in FreeCAD,
+              a free and open source CAD tool.
             </p>
           </Link>
           <Link
@@ -77,10 +87,10 @@ export default function GuidesPage() {
               Onshape Guide
             </h2>
             <p className="text-gray-300">
-              A step-by-step tutorial for building a Gridfinity bin in Onshape.
+              A step-by-step tutorial for building a Gridfinity bin in Onshape,
+              a browser-based CAD tool.
             </p>
           </Link>
-          
         </div>
       </div>
     </div>

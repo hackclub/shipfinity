@@ -4,75 +4,93 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className="p-10 bg-gray-800 text-gray-100">
-      <div className="flex flex-col items-center">
-        <h1 className="text-4xl font-bold text-indigo-400">Shipfinity</h1>
-        <p className="mt-4 text-gray-300">
-          A Hack Club YSWS where you ship a Gridfinity bin, and we'll send you
-          it (or filament)!
+      <div className="flex flex-col items-center text-center">
+        <p className="text-sm font-semibold uppercase tracking-[0.2em] text-indigo-300">
+          Hack Club YSWS
+        </p>
+        <h1 className="mt-2 text-4xl font-bold text-indigo-400">
+          Shipfinity
+        </h1>
+        <p className="mt-4 max-w-2xl text-gray-300">
+          Design a Gridfinity bin, get it printed.
         </p>
         <br />
         <Image
           src="/bin3.png"
-          alt="bin3"
+          alt="Gridfinity bin"
           className="border border-gray-700 rounded-lg"
           width={500}
           height={500}
+          priority
         />
       </div>
+
       <div className="box-out">
         <h2 className="box-title">What is Gridfinity?</h2>
         <p className="box-in">
-          Gridfinity is a modular, open-source grid storage system designed for
-          workshops and other workspaces to help with organization. It uses a
-          standardized grid pattern (42x42mm) and modular bins that can be
-          customized to fit various tools, parts, or supplies. The system is
-          highly flexible, allowing users to create tailored storage solutions
-          that maximize efficiency and minimize clutter.
-        </p>
-      </div>
-      <br />
-      <div className="box-out">
-        <h2 className="box-title">What are the requirements?</h2>
-        <p className="box-in">
-          1. Spend at least 4 hours designing the bins <br />
-          2. Your submission must be unique. You may be asked to clarify why
-          your bin is better/different if a similar 3D model already exists{" "}
-          <br />
-          3. Your submission must have a purpose <br />
-          4. You must be 18 or under.
+          Gridfinity is a modular 42x42mm storage system used to organize desks,
+          workshops, or any space where the bins fit. The goal is simple: learn
+          the basics of CAD by shipping a real 3D model and publishing it. It
+          will also give you an incentive to organize your spaces.
         </p>
       </div>
 
-      <br />
+      <div className="box-out">
+        <h2 className="box-title">The rules</h2>
+        <div className="box-in">
+          <ol className="box-list">
+            <li>
+              Spend at least 3 hours of design work. You can use Hackatime or a
+              timelapse plus a five-sentence dev log.
+            </li>
+            <li>
+              Design at least one unique bin with a clear use case, such as a
+              holder for soldering tips or a bin for fasteners.
+            </li>
+            <li>Include photos or renders showing the final result.</li>
+            <li>
+              Publish the design files on a public model page, such as
+              Printables.
+            </li>
+          </ol>
+        </div>
+      </div>
+
       <div className="box-out">
         <h2 className="box-title">What will I get?</h2>
-        <p className="box-in">
-          1. You'll receive a grant locked to filament vendors at $4/hour of
-          your design time.
-          <br />
-          2. When the event ends, a week-long voting will determine the best
-          bins.
-          <br />
-          3. The top 5 vote-getting participants will each receive an extra
-          grant equal to (Total hours spent by all participants / 5).
-          <br />
-        </p>
+        <div className="box-in">
+          <div className="box-grid">
+            <div className="box-card">
+              <h3 className="font-semibold text-indigo-300">Base grant</h3>
+              <p className="mt-2">
+                You'll receive a base grant of $4 per hour of approved design
+                time, primarily for filament or shipping for PrintingLegion.
+              </p>
+            </div>
+            <div className="box-card">
+              <h3 className="font-semibold text-indigo-300">Bonus pool</h3>
+              <p className="mt-2">
+                The remaining $1 per hour is banked into a community bonus pool.
+                After the event, participants can vote for their favorite
+                projects. The top 10% of participants will receive an additional
+                bonus grant from the banked pool.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-      <br />
+
       <div className="box-out">
-        <h2 className="box-title">What have people already made?</h2>
+        <h2 className="box-title">Need inspiration?</h2>
         <div className="box-in">
           <p className="text-gray-300">
-            There are lots of community-made bins and collections which can be
-            found in pages like{" "}
-            <a href="https://thangs.com/category/Gridfinity/Bins">Thangs</a> or{" "}
-            <a href="https://www.printables.com/search/models?q=tag%3Agridfinity">
-              Printables
-            </a>
+            Make a unique Gridfinity bin with a real purpose. That could be a
+            holder for soldering tips, a bin for fasteners, a desk organizer for
+            pens and SD cards, or a custom tray for art tools.
           </p>
-          <p className="mt-4">A few remarkable examples are:</p>
+          <p className="mt-4">A few remarkable examples from the community:</p>
 
-          <ul className="list-disc list-inside mt-4 text-gray-300">
+          <ul className="list-disc list-inside mt-4 space-y-2 text-gray-300">
             <li>
               <a href="https://www.printables.com/model/301673-gridfinity-tool-holder-collection">
                 Gridfinity tool holder collection
@@ -95,31 +113,32 @@ export default function Home() {
           </ul>
         </div>
       </div>
-      <br />
+
       <div className="box-out">
         <p className="box-title">How do I start?</p>
         <p className="box-in">
           Already familiar with CAD and Gridfinity? Simply open your preferred
-          editor and start creating a new project! <br /> New to CAD?{" "}
-          <Link href="/guide">Click here for a beginner's guide</Link>
-          {" "}to get started. Don't forget to join the{" "}
+          editor and start creating. <br /> New to CAD?{" "}
+          <Link href="/guide">Read the beginner's guide</Link>. Don't forget to
+          join the{" "}
           <a href="https://hackclub.enterprise.slack.com/archives/C08EEU7T4GM">
             #shipfinity
           </a>{" "}
-          channel on Slack!
+          channel on Slack.
         </p>
       </div>
-      <br />
+
       <div className="box-out text-center" id="submit">
         <h2 className="box-title">Ready to ship?</h2>
         <p className="box-in">
-          Finished your bin? Submit your project and get your filament grant!
-          <br /><br />
+          Finished your bin? Submit your project and get your filament grant.
+          <br />
+          <br />
           <a
             href="https://forms.hackclub.com/t/e4RhUQhpuUus"
             className="btn btn-primary text-lg px-8 py-4"
           >
-            Submit Your Project
+            Submit your project
           </a>
         </p>
       </div>

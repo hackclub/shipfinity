@@ -12,7 +12,8 @@
   --font-mono: var(--font-geist-mono);
 }
 
-html, body {
+html,
+body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans), system-ui, sans-serif;
@@ -89,4 +90,16 @@ a:focus-visible {
   border-radius: 0.5rem;
   box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   margin-top: 1rem;
+}
+
+.box-list {
+  @apply list-decimal list-inside space-y-3 text-gray-300;
+}
+
+.box-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-4 mt-4;
+}
+
+.box-card {
+  @apply bg-gray-900/60 border border-gray-700 rounded-lg p-4;
 }
