@@ -38,7 +38,7 @@ export default function RootLayout({
             <img
               src="https://assets.hackclub.com/flag-orpheus-top.svg"
               alt="Hack Club"
-              className="w-64 border-0 hover:rotate-5 transition"
+              className="w-48 border-0 hover:rotate-5 transition"
             />
           </a>
           <div className="section px-6 pl-24 sm:pl-6 py-3 flex items-center justify-between">
